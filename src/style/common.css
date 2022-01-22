@@ -1,0 +1,21 @@
+:root {
+  --main-color: tomato; /*#ff5722*/
+  --sub--color: #ffbb9b;
+  --sub--light: #ffeecc;
+  --sub--dark: #ca8b6d;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--sub--light);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
