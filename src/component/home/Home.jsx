@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './home.module.css';
 
-const Home = (props) => {
+const Home = ({ homeRef }) => {
   return (
-    <section className={styles.home}>
+    <section className={styles.home} ref={homeRef}>
       {/* <img className={styles.avatar} src='img/avatar2.jpg' alt='avatar' /> */}
       <div className={styles.textbox}>
         <span>Front-End</span>

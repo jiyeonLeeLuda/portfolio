@@ -2,15 +2,16 @@ import React, { useEffect, useState } from 'react';
 import styles from './navbar.module.css';
 import { useMediaQuery } from 'react-responsive';
 
-const NavBar = (props) => {
+const NavBar = ({ homeRef }) => {
   const isDesktop = useMediaQuery({
     query: '(min-width: 769px)',
   });
-  console.log(isDesktop);
-
   const [showMenus, setShowMenus] = useState(false);
   const onClickMenuDropDown = () => {
     setShowMenus(!showMenus);
+  };
+  const onClickHome = () => {
+    homeRef.current.scrollIntoView();
   };
 
   useEffect(() => {
@@ -23,7 +24,7 @@ const NavBar = (props) => {
         <span>Lee JiYeon</span>
       </div>
       <ul className={`${styles.menus} ${showMenus ? styles.active : ''}`}>
-        <li>Home</li>
+        <li onClick={onClickHome}>Home</li>
         <li>About</li>
         <li>Skill</li>
         <li>MyWork</li>
