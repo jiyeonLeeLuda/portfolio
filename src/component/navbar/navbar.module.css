@@ -36,18 +36,18 @@
 }
 
 .link {
-  color: var(--sub--light);
   display: none;
 }
 .link.active {
   display: block;
 }
 
-.link i {
+.link a {
   flex: 1 1 5%;
   font-size: 1.5rem;
   margin: 0 1rem;
   cursor: pointer;
+  color: var(--sub--light);
 }
 .menuDropDown {
   display: none;

@@ -30,8 +30,12 @@ const NavBar = (props) => {
         <li>Contact</li>
       </ul>
       <section className={`${styles.link} ${showMenus ? styles.active : ''}`}>
-        <i className='fab fa-github'></i>
-        <i className='far fa-envelope'></i>
+        <a href='https://github.com/jiyeonLeeLuda' target={'_blank'}>
+          <i className='fab fa-github'></i>
+        </a>
+        {/* <a href='mailto:dlwldusq_work@daum.net' target={'_blank'}>
+          <i className='far fa-envelope'></i>
+        </a> */}
       </section>
       <button className={styles.menuDropDown} onClick={onClickMenuDropDown}>
         <i className='fas fa-bars'></i>
