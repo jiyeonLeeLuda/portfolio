@@ -1,0 +1,33 @@
+.job {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-bottom: 1px solid var(--sub-dark);
+}
+
+.textContainer {
+  text-align: center;
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+}
+.job__name,
+.job__period {
+  margin: 0;
+}
+
+.works {
+  text-align: start;
+  flex: 1 1 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .job {
+    flex-direction: column;
+    padding: 0;
+  }
+  .works {
+    margin: 1rem 0;
+  }
+}

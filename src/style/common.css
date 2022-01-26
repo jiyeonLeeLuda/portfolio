@@ -1,8 +1,15 @@
 :root {
+  /* color */
   --main-color: tomato; /*#ff5722*/
-  --sub--color: #ffbb9b;
-  --sub--light: #ffeecc;
-  --sub--dark: #ca8b6d;
+  --sub-color: #ffbb9b;
+  --sub-light: #ffeecc;
+  --sub-dark: #ca8b6d;
+  --font-black: #371708;
+
+  /* size */
+  --title-font: 3rem;
+  --description-font: 1rem;
+  --sub-title-font: 1.5rem;
 }
 
 * {
@@ -11,7 +18,8 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: var(--sub--light);
+  color: var(--font-black);
+  background-color: var(--sub-light);
 }
 
 button {

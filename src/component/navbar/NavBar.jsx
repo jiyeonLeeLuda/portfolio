@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styles from './navbar.module.css';
 import { useMediaQuery } from 'react-responsive';
 
-const NavBar = ({ homeRef }) => {
+const NavBar = ({ homeRef, aboutRef }) => {
   const isDesktop = useMediaQuery({
     query: '(min-width: 769px)',
   });
@@ -12,6 +12,10 @@ const NavBar = ({ homeRef }) => {
   };
   const onClickHome = () => {
     homeRef.current.scrollIntoView();
+  };
+
+  const onClickAbout = () => {
+    aboutRef.current.scrollIntoView();
   };
 
   useEffect(() => {
@@ -25,7 +29,7 @@ const NavBar = ({ homeRef }) => {
       </div>
       <ul className={`${styles.menus} ${showMenus ? styles.active : ''}`}>
         <li onClick={onClickHome}>Home</li>
-        <li>About</li>
+        <li onClick={onClickAbout}>About</li>
         <li>Skill</li>
         <li>MyWork</li>
         <li>Contact</li>
