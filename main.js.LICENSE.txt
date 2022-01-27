@@ -4,6 +4,30 @@ object-assign
 @license MIT
 */
 
+/*!
+ * Copyright (c) 2017 ~ present NAVER Corp.
+ * billboard.js project is licensed under the MIT license
+ *
+ * billboard.js, JavaScript chart library
+ * https://naver.github.io/billboard.js/
+ *
+ * @version 3.3.0
+ *
+ * All-in-one packaged file for ease use of 'billboard.js' with dependant d3.js modules & polyfills.
+ * - d3-axis ^3.0.0
+ * - d3-brush ^3.0.0
+ * - d3-drag ^3.0.0
+ * - d3-dsv ^3.0.1
+ * - d3-ease ^3.0.1
+ * - d3-interpolate ^3.0.1
+ * - d3-scale ^4.0.2
+ * - d3-selection ^3.0.0
+ * - d3-shape ^3.1.0
+ * - d3-time-format ^4.1.0
+ * - d3-transition ^3.0.1
+ * - d3-zoom ^3.0.0
+ */
+
 /** @license React v0.20.2
  * scheduler.production.min.js
  *
