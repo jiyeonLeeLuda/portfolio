@@ -12,7 +12,7 @@ const AboutJob = ({ job }) => {
       </div>
       <ul className={styles.works}>
         {works.map((work) => (
-          <li>{work}</li>
+          <li key={work}>{work}</li>
         ))}
       </ul>
     </li>

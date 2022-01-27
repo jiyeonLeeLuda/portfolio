@@ -1,0 +1,17 @@
+.title {
+  font-size: var(--title-font);
+  text-align: center;
+  margin-top: 10rem;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5rem 0;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}

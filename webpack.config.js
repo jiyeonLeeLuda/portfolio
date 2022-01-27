@@ -32,6 +32,12 @@ module.exports = {
   ],
   resolve: {
     extensions: ['.js', '.jsx'],
+    alias: {
+      'react-billboardjs': path.resolve(
+        __dirname,
+        'node_modules/react-billboardjs/dist/react-billboardjs.min.js'
+      ),
+    },
   },
   devServer: {
     historyApiFallback: {
