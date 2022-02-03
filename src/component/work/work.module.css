@@ -1,0 +1,23 @@
+.myWork {
+  padding-top: 10rem;
+}
+.title {
+  font-size: var(--title-font);
+  text-align: center;
+}
+.projectList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat();
+  gap: 2rem;
+  margin: auto;
+  padding: 0;
+  max-width: 80rem;
+}
+
+@media screen and (max-width: 768px) {
+  .projectList {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat();
+  }
+}

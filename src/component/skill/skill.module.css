@@ -1,14 +1,18 @@
+.skill {
+  padding-top: 10rem;
+}
 .title {
   font-size: var(--title-font);
   text-align: center;
-  margin-top: 10rem;
 }
 .container {
-  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin: 5rem 0;
+}
+.chart {
+  width: 400px;
 }
 @media screen and (max-width: 768px) {
   .container {

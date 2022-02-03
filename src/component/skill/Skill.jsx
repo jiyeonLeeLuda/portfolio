@@ -5,10 +5,12 @@ import SkillList from './SkillList';
 
 const Skill = ({ skillRef }) => {
   return (
-    <section ref={skillRef}>
+    <section className={styles.skill} ref={skillRef}>
       <h2 className={styles.title}>Skill</h2>
       <div className={styles.container}>
-        <RadarChart />
+        <div className={styles.chart}>
+          <RadarChart />
+        </div>
         <SkillList />
       </div>
     </section>
