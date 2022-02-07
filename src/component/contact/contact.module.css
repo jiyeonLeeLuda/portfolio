@@ -1,0 +1,15 @@
+.contact {
+  padding-top: 20rem;
+}
+.title {
+  font-size: var(--title-font);
+  text-align: center;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+  margin-bottom: 10rem;
+}

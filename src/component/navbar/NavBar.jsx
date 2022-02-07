@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styles from './navbar.module.css';
 import { useMediaQuery } from 'react-responsive';
 
-const NavBar = ({ homeRef, aboutRef, skillRef, myWorkRef }) => {
+const NavBar = ({ homeRef, aboutRef, skillRef, myWorkRef, contactRef }) => {
   const isDesktop = useMediaQuery({
     query: '(min-width: 769px)',
   });
@@ -25,6 +25,10 @@ const NavBar = ({ homeRef, aboutRef, skillRef, myWorkRef }) => {
   const onClickMyWork = () => {
     myWorkRef.current.scrollIntoView();
   };
+
+  const onClickContact = () => {
+    contactRef.current.scrollIntoView();
+  };
   useEffect(() => {
     setShowMenus(isDesktop);
   }, [isDesktop]);
@@ -39,7 +43,7 @@ const NavBar = ({ homeRef, aboutRef, skillRef, myWorkRef }) => {
         <li onClick={onClickAbout}>About</li>
         <li onClick={onClickSkill}>Skill</li>
         <li onClick={onClickMyWork}>MyWork</li>
-        <li>Contact</li>
+        <li onClick={onClickContact}>Contact</li>
       </ul>
       <section className={`${styles.link} ${showMenus ? styles.active : ''}`}>
         <a href='https://github.com/jiyeonLeeLuda' target={'_blank'}>
