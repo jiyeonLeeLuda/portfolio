@@ -5,6 +5,12 @@ import styles from './work.module.css';
 const Work = ({ myWorkRef }) => {
   const projects = [
     {
+      title: '쇼핑몰 사이트',
+      description: 'firebase store, author등을 활용한 쇼핑몰 웹사이트 입니다.',
+      imgUrl: './img/projects/08.shopingMall.png',
+      link: 'http://web-project-2021.s3-website.ap-northeast-2.amazonaws.com/',
+    },
+    {
       title: '명함관리 앱',
       description:
         'firebase realtime db가 적용된 실시간 명함 편집기 입니다. 반영된 수정사항은 실시간으로 db에 반영됩니다. 반응형 웹사이트 입니다.',
@@ -52,6 +58,12 @@ const Work = ({ myWorkRef }) => {
         '집에서 PT를 받고싶은 고객과 트레이너를 연결해주는 서비스 입니다.',
       imgUrl: './img/projects/01_ptAtHome.png',
       link: 'https://vimeo.com/325857106',
+    },
+    {
+      title: 'Android App : My Art Portfolio',
+      description: '온라인 미술품 전시 및 작품 판매 플랫폼 입니다.',
+      imgUrl: './img/projects/09.myArtportfolio.png',
+      link: 'https://vimeo.com/671099379',
     },
   ];
 
